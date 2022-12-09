@@ -1,0 +1,89 @@
+.container-home {
+    background-image: url('../../assets/digimon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 980px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .content-form {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        animation: bounceInDown 1.5s;
+
+        label {
+            display: block;
+            margin-top: 50px;
+            justify-content: center;
+        }
+
+        #warning {
+            color: red;
+        }
+
+        select {
+            width: 100%;
+            padding: 4px;
+            border-radius: 10px;
+            border: 1.5px solid black;
+        }
+    }
+
+    .content-digimon {
+        width: 320px;
+        height: 400px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 15px;
+
+        .name {
+            width: 280px;
+            text-align: center;
+            font-family: "Inter";
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        button {
+            background: linear-gradient(180deg, #13629e 0.36%, #095086 99.65%);
+            border: 2px solid white;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px;
+            cursor: pointer;
+            color: white;
+            animation: zoomIn 2s;
+
+            h1 {
+                font-family: "Inter";
+                font-weight: 400;
+                font-size: 15px;
+                color: white;
+            }
+        }
+
+        button:hover {
+            background: linear-gradient(180deg, #0b4f83 0.36%, #053c67 99.65%);
+        }
+    }
+}
